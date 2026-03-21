@@ -1,0 +1,21 @@
+app:
+  name: go_pg_http
+  env: dev
+
+http:
+  host: 0.0.0.0
+  port: 8080
+
+postgres:
+  host: localhost
+  port: 5432
+  user: app
+  password: app
+  database: go_pg_http
+  sslmode: disable
+  max_open_conns: 10
+  max_idle_conns: 5
+  conn_max_lifetime: 5m
+
+log:
+  level: debug
